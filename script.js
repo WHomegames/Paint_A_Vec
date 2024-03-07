@@ -1,36 +1,3 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>p5js example</title>
-    <style>
-      html,
-      body {
-        background-color: black;
-        margin: 0;
-        padding: 0;
-        overscroll-behavior: none;
-      }
-    </style>
-  </head>
-
-  <body>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"
-      integrity="sha512-2r+xZ/Dm8+HI0I8dsj1Jlfchv4O3DGfWbqRalmSGtgdbVQrZyGRqHp9ek8GKk1x8w01JsmDZRrJZ4DzgXkAU+g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"
-      integrity="sha512-WzkwpdWEMAY/W8WvP9KS2/VI6zkgejR4/KTxTl4qHx0utqeyVE0JY+S1DlMuxDChC7x0oXtk/ESji6a0lP/Tdg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-
-    <script>
-        
 let lines = [];
 let linesUndone = [];
 
@@ -252,7 +219,3 @@ function savePNG()
   saveCanvas("drawing.png");
   resizeCanvas(400, 500);
 }
-
- </script>
-  </body>
-</html>
