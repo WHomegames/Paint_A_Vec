@@ -40,50 +40,50 @@ function setup() {
   background(200);
  
   myPicker = createColorPicker(color(random(0,360),100,100));
-  myPicker.position(10, 405);
+  myPicker.position(10, 405,'fixed');
  
   let button0 = createButton('Dynamic Brush');
-  button0.position(70, 405);
+  button0.position(70, 405,'fixed');
   button0.mousePressed(() => {
     brushType = 1;
   });
  
   let button1 = createButton('Static Brush');
-  button1.position(70, 430);
+  button1.position(70, 430,'fixed');
   button1.mousePressed(() => {
     brushType = 0;
   });
  
   let button2 = createButton('Line Tool');
-  button2.position(70, 455);
+  button2.position(70, 455,'fixed');
   button2.mousePressed(() => {
     brushType = 3;
   });
  
   let button3 = createButton('Clear');
-  button3.position(345, 405);
+  button3.position(345, 405,'fixed');
   button3.mousePressed(() => {
     lines = [];
   });
  
   let button4 = createButton('Export SVG');
-  button4.position(313, 430);
+  button4.position(313, 430,'fixed');
   button4.mousePressed(() => {
     saveSVG();
   });
  
   let button5 = createButton('Export PNG');
-  button5.position(313, 455);
+  button5.position(313, 455,'fixed');
   button5.mousePressed(() => {
     savePNG();
   });
  
   b_mag = createSlider(1, 25,15);
-  b_mag.position(190, 405);
+  b_mag.position(190, 405,'fixed');
   b_mag.size(50);
  
   b_thickness = createSlider(1, 100,10);
-  b_thickness.position(190, 430);
+  b_thickness.position(190, 430,'fixed');
   b_thickness.size(50);
 }
 
